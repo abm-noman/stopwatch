@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stopwatch</title>
+    <title>Responsive Stopwatch</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Stopwatch</h1>
-        <div id="display">00:00:00</div>
-        <button id="startStopBtn">Start</button>
-        <button id="resetBtn">Reset</button>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="text-center bg-white p-4 rounded shadow">
+            <h1 class="mb-4">Stopwatch</h1>
+            <div id="display" class="display-4 mb-4">00:00:00</div>
+            <div class="btn-group" role="group">
+                <button id="startStopBtn" class="btn btn-primary">Start</button>
+                <button id="resetBtn" class="btn btn-danger">Reset</button>
+            </div>
+        </div>
     </div>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
